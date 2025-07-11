@@ -5,6 +5,7 @@
 let name ="Dipak";
 let age = 22;
 let isLoggedIn = false;
+let y;
 
 
 // number => 2 to power 53
@@ -18,3 +19,6 @@ let isLoggedIn = false;
 // NN SS BB U
 
 console.log(typeof name);
+console.log(typeof age);
+console.log(typeof isLoggedIn);
+console.log(typeof y);
