@@ -8,7 +8,7 @@ console.log("P");
 console.log("A");
 console.log("K");
 }
-sayMyName();  //basics function
+ sayMyName();  //basics function
 
 function addTwoNumbers(num1,num2) {
     console.log(num1+num2);   
@@ -25,3 +25,28 @@ function loginUserMassage(username){
     return  "${username} just looged in"
 }
 console.log(loginUserMassage('Dipak')); //function with parameters(username) and argument('Dipak')
+
+
+
+function calculateCartPrice(...num1){
+     return num1
+}
+console.log(calculateCartPrice(200,400,500));
+
+
+//Object in function
+const user={
+    username:"Dipak",
+    price:200
+}
+function handleObect(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);   
+}
+
+//Array in function
+const myNewArray =[100,300,400,31,444];
+function secondValue(getArray){
+    return getArray[1];
+}
+console.log(secondValue(myNewArray));
+console.log(secondValue([100,200,300,400]));
