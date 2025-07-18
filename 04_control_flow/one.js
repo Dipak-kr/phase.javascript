@@ -6,14 +6,15 @@
 //     //statement
 // }
 
-// //example
-
-// if (true) {
-//     // statement becomes true
-// }
-// if (false) {
-//   // statement becomes false 
-// }
+//example
+/*
+if (true) {
+    // statement becomes true
+}
+if (false) {
+  // statement becomes false 
+}
+*/
 
 // const isUserLoggedIn = True
 // if (2!=3){
@@ -21,15 +22,18 @@
     
 // }
 
-// const temprature = 41
+/*
+const temprature = 41
 
-// if(temprature===41){
-//     console.log('yes it is greater');  
-// } else{
-//     console.log('No it is less than 41 '); 
-// }
-// console.log("Execute");
+if(temprature===41){
+    console.log('yes it is greater');  
+} else{
+    console.log('No it is less than 41 '); 
+}
+console.log("Execute");
+*/
 
+//    <,>,=<,=>,==,!=,===,!== 
 // 
 
 const isUserLoggedIn = true
