@@ -14,14 +14,46 @@
 </body>
 
 <script>
+
+    // to add any value 
       function addLanguage(langName){
-        const li=document.createElement('li');
-        li.innerHTML =`${langName}`
+        const li= document.createElement('li')   //create new element in memmory
+        li.innerHTML=`${langName}`               //set the content
         document.querySelector('.language')
-        appendChild(li)
+        .appendChild(li); // adds it to the page
+
+        // addLanguage("python"
+      }
+      addLanguage("python")           //print the added element in the page
+      addLanguage("typescript")
+      addLanguage("css")
+
+      function addOptiLanguage(langName){
+        const li= document.createElement('li');
+       li.appendChild(document.createTextNode(langName))
+       document.querySelector('.language').appendChild(li)  
 
       }
-      addLanguage("python")
-      addLanguage("typescript")
+      addOptiLanguage("global")
+
+    //   to edit any code 
+
+    const secondLang=document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML ="mogo"            
+    const newli=document.querySelector('li')   //create new element 
+    newli.textContent="Dipak"
+    secondLang.replaceWith(newli)               //replace with second element
+
+    // edit     using outerHTML
+
+    const firstLang=document.querySelector("li:first-child")  
+    firstLang.outerHTML='<li>TypeScript</li>'
+
+    // remove any element 
+
+    const lastLang=document.querySelector("li:last-child")
+    lastLang.remove()
+
+
 </script>
 </html>
