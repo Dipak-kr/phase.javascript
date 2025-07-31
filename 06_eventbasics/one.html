@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>My events</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="alone" src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" alt=""></li>
+
+
+            <li><img width="200px" id="tiger" src="https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg" alt=""></li>
+
+
+            <li><img width="200px" id="sunset" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt=""></li>
+
+
+            <li><img width="200px" id="elephent" src="https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?cs=srgb&dl=pexels-hsapir-1054655.jpg&fm=jpg" alt=""></li>
+
+
+            <li><img width="200px" id="mount" src="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" alt=""></li>
+
+            <li><a  style="color: aliceblue;" href="https://github.com/itsdipakshah" id="github"> itsdipakshah</a></li>
+        </ul>
+    </div>
+   <script>
+    //    document.getElementById('tiger').onclick = function(){
+    //     alert("i am tiger")
+    //    }
+
+    // best aproach
+    // document.getElementById('tiger').addEventListener('click',function(e){
+    //     console.log(e);
+        
+    // },false)
+
+
+    // real time project 
+
+        document.querySelector('#images').addEventListener('click',function(e){
+            console.log(e.target.tagName);
+            if (e.target.tagName === 'IMG') {
+                console.log(e.target.id);
+                
+            }
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+            
+        })
+
+
+   </script>
+</body>
+</html>

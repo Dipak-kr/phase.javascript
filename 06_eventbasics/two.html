@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dipak ji JS class</h1>
+    <button id="stop">Stop</button>
+
+
+    <script>
+        //setTimeout le kunnai pani element lai fix time paxi ak palta execute gardinxa jastai yaha 2 sec ma vako xa mero name print
+       /*
+       
+       setTimeout(function(){
+        console.log("Dipak");
+        },2000) 
+*/
+        
+        const sayDipak=function(){
+        console.log("Dipak");
+        }
+        const changeMe= function(){
+            document.querySelector('h1').innerHTML
+             ="click kar vausdi k"
+        }
+         const jadu= setTimeout(changeMe,2000)
+        document.querySelector('#stop').addEventListener('click',function(){
+            clearTimeout(changeMe)
+            console.log('stoped');
+            
+        })
+    </script>
+</body>
+</html>
